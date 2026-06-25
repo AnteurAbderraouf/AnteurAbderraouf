@@ -45,36 +45,51 @@ def main() -> None:
 
     # 2x render so the wordmark stays crisp when GitHub scales it down.
     SCALE = 2
-    title_size = 84 * SCALE   # "Das Stein Adler"
-    sub_size = 18 * SCALE     # "Abderraouf Anteur · Software engineer · Algiers"
+    title_size = 70 * SCALE   # smaller than italic version — small caps reads bigger
+    sub_size = 16 * SCALE
     pad_x = 40 * SCALE
-    pad_y = 24 * SCALE
-    gap = 14 * SCALE          # space between title and subtitle
+    pad_y = 28 * SCALE
+    gap = 22 * SCALE          # extra breathing room under the monumental caps
+    title_tracking = 16 * SCALE  # wide letter-spacing for the monument feel
+    sub_tracking = 4 * SCALE
 
-    title_font = ImageFont.truetype(str(italic_path), title_size)
+    # Regular (upright) weight for both — no italic. Small-caps appearance comes
+    # from rendering in uppercase with wide tracking; reads architectural and
+    # masculine instead of the flowing italic that read "girlish".
+    title_font = ImageFont.truetype(str(regular_path), title_size)
     sub_font = ImageFont.truetype(str(regular_path), sub_size)
 
-    title = "Das Stein Adler"
-    sub = "Abderraouf Anteur  ·  Software engineer  ·  Algiers"
+    title = "DAS STEIN ADLER"
+    sub = "ABDERRAOUF ANTEUR  ·  SOFTWARE ENGINEER  ·  ALGIERS"
 
-    # Use font metrics (ascent / descent) instead of textbbox — italic fonts
-    # have swash overhang the bbox underestimates, which caused the subtitle
-    # to overlap the title in the first render.
     t_ascent, t_descent = title_font.getmetrics()
     s_ascent, s_descent = sub_font.getmetrics()
     t_line = t_ascent + t_descent
     s_line = s_ascent + s_descent
 
-    # Measure widths only.
-    tmp = Image.new("RGBA", (10, 10))
-    tdraw = ImageDraw.Draw(tmp)
-    t_w = int(tdraw.textlength(title, font=title_font))
-    s_w = int(tdraw.textlength(sub, font=sub_font))
+    # Measure widths with manual tracking (Pillow doesn't support letter-spacing
+    # directly — we draw each glyph individually with explicit spacing).
+    def tracked_width(text: str, font: ImageFont.FreeTypeFont, tracking: int) -> int:
+        tmp = Image.new("RGBA", (10, 10))
+        d = ImageDraw.Draw(tmp)
+        total = 0
+        for i, ch in enumerate(text):
+            total += int(d.textlength(ch, font=font))
+            if i < len(text) - 1:
+                total += tracking
+        return total
 
-    # Italic overhang on the right: pad horizontally so right-edge swashes don't clip.
-    italic_pad = title_size // 4
+    def draw_tracked(d: ImageDraw.ImageDraw, xy: tuple[int, int], text: str,
+                     font: ImageFont.FreeTypeFont, tracking: int, fill) -> None:
+        x, y = xy
+        for ch in text:
+            d.text((x, y), ch, font=font, fill=fill)
+            x += int(d.textlength(ch, font=font)) + tracking
 
-    W = max(t_w + italic_pad, s_w) + pad_x * 2
+    t_w = tracked_width(title, title_font, title_tracking)
+    s_w = tracked_width(sub, sub_font, sub_tracking)
+
+    W = max(t_w, s_w) + pad_x * 2
     H = t_line + gap + s_line + pad_y * 2
 
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -83,16 +98,13 @@ def main() -> None:
     title_color = (232, 224, 212, 255)  # #e8e0d4
     sub_color = (176, 160, 144, 255)    # #b0a090
 
-    # Pillow's draw.text places y at the top of the glyph box (ascent line).
-    # Stack title above subtitle with explicit line heights so descenders /
-    # swashes don't intrude into the row below.
     tx = (W - t_w) // 2
     ty = pad_y
     sx = (W - s_w) // 2
     sy = ty + t_line + gap
 
-    draw.text((tx, ty), title, font=title_font, fill=title_color)
-    draw.text((sx, sy), sub, font=sub_font, fill=sub_color)
+    draw_tracked(draw, (tx, ty), title, title_font, title_tracking, title_color)
+    draw_tracked(draw, (sx, sy), sub, sub_font, sub_tracking, sub_color)
 
     out = ROOT / "wordmark.png"
     img.save(out, format="PNG", optimize=True)
