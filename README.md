@@ -53,11 +53,9 @@ Management system for private language schools: a student-facing website for cou
 
 <div align="center">
 
-<img src="contrib.svg" alt="One-year contribution range" width="100%" />
+<img src="profile-3d-contrib/profile-night-view.svg" alt="One year of GitHub contributions, rendered in 3D" width="100%" />
 
 </div>
-
-<p align="center"><sub><em>Placeholder. Live data wiring and the real visual to follow.</em></sub></p>
 
 <p align="center">⟡ &nbsp; <em>Connect</em> &nbsp; ⟡</p>
 
