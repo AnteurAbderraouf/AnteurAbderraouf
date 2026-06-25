@@ -1,15 +1,17 @@
-<!-- Header wave -->
+<!-- Header — single animated SVG banner.
+     Background: Caspar David Friedrich, "Wanderer above the Sea of Fog" (1818, public domain).
+     Overlay: SVG feTurbulence-driven fog drifting across the lower band.
+     The circular avatar is baked into the SVG, so no GitHub-CSS hacks needed.
+     Rebuild with: python build_banner.py -->
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=4a3728,6b5244,8c7355,a89070&height=140&section=header&text=Das%20Stein%20Adler&fontSize=40&fontColor=e8e0d4&fontAlignY=55&animation=fadeIn&desc=AnteurAbderraouf%20%C2%B7%20CS%20student%20%26%20builder&descAlignY=78&descSize=14&descColor=b0a090" />
-
+<img src="./banner.svg" alt="Das Stein Adler — AnteurAbderraouf" width="100%" />
 </div>
 
 ---
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=EB+Garamond&size=22&pause=2500&color=8C7355&center=true&vCenter=true&width=560&lines=A+guy+with+more+ambition+than+he+can+handle.;Building+things+that+matter.;Full-stack+%C2%B7+Mobile+%C2%B7+AI-augmented.;Algiers+%E2%86%92+anywhere.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=EB+Garamond&size=22&pause=2500&color=8C7355&center=true&vCenter=true&width=560&lines=Building+things+that+matter.;Full-stack+%C2%B7+Mobile+%C2%B7+AI-augmented.;Algiers+%E2%86%92+anywhere.)](https://git.io/typing-svg)
 
 </div>
 
@@ -21,7 +23,7 @@
 
 **About**
 
-CS graduate from [USTHB](https://www.usthb.dz/) · Algiers, Algeria.
+1st year Master's student at [USTHB](https://www.usthb.dz/) · Algiers, Algeria.
 I build full-stack web and mobile products — from schema to shipped UI.
 Currently exploring AI-augmented development and personal tooling.
 
