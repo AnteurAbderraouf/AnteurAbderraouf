@@ -45,7 +45,7 @@ Management system for private language schools: a student-facing website for cou
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=AnteurAbderraouf&show_icons=true&theme=transparent&bg_color=1a1a1a&border_color=6b5244&title_color=a89070&text_color=c8bdb0&icon_color=8c7355&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=AnteurAbderraouf&show_icons=true&bg_color=1a1a1a&border_color=6b5244&title_color=a89070&text_color=c8bdb0&icon_color=8c7355&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub stats" />
 
 </div>
 
