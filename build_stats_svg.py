@@ -44,6 +44,12 @@ PAD_Y = 28
 
 FONT_STACK = "'EB Garamond', Georgia, 'Times New Roman', serif"
 
+# Non-code "languages" GitHub's linguist tags in repos — RTF from Word exports,
+# Roff/Groff from man pages, plain Text. Filter these out of the top-languages
+# ranking so real code shows through.
+LANG_BLACKLIST = {"Rich Text Format", "Roff", "Groff", "Text"}
+TOP_LANG_COUNT = 6
+
 
 # -----------------------------------------------------------------------------
 # Data
@@ -55,7 +61,7 @@ query($login: String!) {
     createdAt
     followers { totalCount }
     pullRequests { totalCount }
-    repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
+    repositories(first: 100, ownerAffiliations: [OWNER, COLLABORATOR], isFork: false) {
       totalCount
       nodes {
         stargazerCount
@@ -110,7 +116,10 @@ def _fetch_meta(user: str, token: str) -> dict[str, Any]:
     for repo in u["repositories"]["nodes"]:
         total_stars += repo["stargazerCount"]
         for edge in repo["languages"]["edges"]:
-            lang_bytes[edge["node"]["name"]] += edge["size"]
+            name = edge["node"]["name"]
+            if name in LANG_BLACKLIST:
+                continue
+            lang_bytes[name] += edge["size"]
 
     return {
         "created_at": u["createdAt"],
@@ -118,7 +127,7 @@ def _fetch_meta(user: str, token: str) -> dict[str, Any]:
         "prs": u["pullRequests"]["totalCount"],
         "repos": u["repositories"]["totalCount"],
         "stars": total_stars,
-        "top_langs": [name for name, _ in lang_bytes.most_common(5)],
+        "top_langs": [name for name, _ in lang_bytes.most_common(TOP_LANG_COUNT)],
     }
 
 
@@ -277,7 +286,7 @@ def build_svg(s: dict[str, Any]) -> str:
         f'stroke="{DIVIDER}" stroke-width="0.6"/>\n'
     )
 
-    langs = s["top_langs"][:5]
+    langs = s["top_langs"][:TOP_LANG_COUNT]
     lang_text = "  ·  ".join(langs) if langs else ""
     lang_y = div_y + 22
     parts.append(
