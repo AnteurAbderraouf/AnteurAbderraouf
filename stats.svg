@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 250" width="495" height="250" role="img" aria-label="Stats: 3,847 contributions, 68 pull requests, 24 repositories, 31 stars, 15 followers, 12 day current streak, 47 day longest streak.">
+  <rect x="0.5" y="0.5" width="494" height="249" rx="6" ry="6" fill="#1a1a1a" stroke="#6b5244" stroke-width="1"/>
+  <text x="34" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="15" fill="#e8e0d4" letter-spacing="4">⟡ &#160;&#160;AT A GLANCE</text>
+  <text x="34" y="70" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#a89070" letter-spacing="2.4">CONTRIBUTIONS</text>
+  <text x="461" y="70" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="14" fill="#e8e0d4" text-anchor="end">3,847</text>
+  <text x="34" y="90" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#a89070" letter-spacing="2.4">PULL REQUESTS</text>
+  <text x="461" y="90" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="14" fill="#e8e0d4" text-anchor="end">68</text>
+  <text x="34" y="110" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#a89070" letter-spacing="2.4">REPOSITORIES</text>
+  <text x="461" y="110" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="14" fill="#e8e0d4" text-anchor="end">24</text>
+  <text x="34" y="130" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#a89070" letter-spacing="2.4">STARS EARNED</text>
+  <text x="461" y="130" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="14" fill="#e8e0d4" text-anchor="end">31</text>
+  <text x="34" y="150" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#a89070" letter-spacing="2.4">FOLLOWERS</text>
+  <text x="461" y="150" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="14" fill="#e8e0d4" text-anchor="end">15</text>
+  <text x="34" y="170" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#a89070" letter-spacing="2.4">CURRENT STREAK</text>
+  <text x="461" y="170" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="14" fill="#e8e0d4" text-anchor="end">12 days</text>
+  <text x="34" y="190" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#a89070" letter-spacing="2.4">LONGEST STREAK</text>
+  <text x="461" y="190" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="14" fill="#e8e0d4" text-anchor="end">47 days</text>
+  <line x1="74" y1="214" x2="211.5" y2="214" stroke="#6b5244" stroke-width="0.6"/>
+  <text x="247.5" y="218" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#6b5244" text-anchor="middle">⟡</text>
+  <line x1="283.5" y1="214" x2="421" y2="214" stroke="#6b5244" stroke-width="0.6"/>
+  <text x="247.5" y="236" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#c8bdb0" text-anchor="middle" font-style="italic">Python  ·  TypeScript  ·  PHP  ·  Dart  ·  Go</text>
+</svg>

@@ -2,7 +2,7 @@
      Header: wordmark.png + vignette.png (both built by Pillow scripts;
      EB Garamond is a PNG because GitHub markdown renders system fonts only).
      Section dividers and headings use the ⟡ glyph as the brand mark.
-     Rebuild assets with:  python build_wordmark.py && python build_vignette.py && python build_contrib_svg.py --mock
+     Rebuild assets with:  python build_wordmark.py && python build_vignette.py && python build_stats_svg.py --mock
 -->
 
 <div align="center">
@@ -45,7 +45,7 @@ Management system for private language schools: a student-facing website for cou
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=AnteurAbderraouf&show_icons=true&bg_color=1a1a1a&border_color=6b5244&title_color=a89070&text_color=c8bdb0&icon_color=8c7355&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub stats" />
+<img src="stats.svg" alt="At a glance — commits, pull requests, repositories, stars, followers, top languages" />
 
 </div>
 
