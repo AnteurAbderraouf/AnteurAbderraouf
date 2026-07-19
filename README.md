@@ -7,14 +7,14 @@
 <!-- animated contribution graph: real data, boxes reveal cell by cell
      (regenerated daily by .github/workflows/update-profile-art.yml) -->
 
-<h3><code>anteur@github ~ $ ./contributions.sh</code></h3>
+<h3><code>Das Stein Adler@github ~ $ ./contributions.sh</code></h3>
 
 <img src="./contrib-heatmap.svg" width="860" alt="Anteur's GitHub contribution graph — auto-refreshed daily" />
 
 <br>
 <br>
 
-<h3><code>anteur@github ~ $ whoami</code></h3>
+<h3><code>antara@github ~ $ whoami</code></h3>
 
 <table>
 <tr>
@@ -26,11 +26,11 @@
 <br>
 <br>
 
-<h3><code>anteur@github ~ $ ./links.sh</code></h3>
+<h3><code>antara@github ~ $ ./links.sh</code></h3>
 
 <p><b>Freelance Software Developer · Cybersecurity & AI Enthusiast</b></p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-anteur-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-HANDLE-HERE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-antara-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-HANDLE-HERE)
 [![GitHub](https://img.shields.io/badge/GitHub-AnteurAbderraouf-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnteurAbderraouf)
 
 <br>
