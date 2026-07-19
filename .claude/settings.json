@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.avivashishta.com)",
+      "Bash(gh api *)",
+      "Bash(curl -s https://api.github.com/repos/AVIVASHISHTA29/AVIVASHISHTA29/contents/scripts)",
+      "Bash(curl -s https://raw.githubusercontent.com/AVIVASHISHTA29/AVIVASHISHTA29/main/scripts/prep_photo.py)",
+      "Bash(curl -s https://raw.githubusercontent.com/AVIVASHISHTA29/AVIVASHISHTA29/main/scripts/make_ascii_svg.py)",
+      "Bash(curl -s https://raw.githubusercontent.com/AVIVASHISHTA29/AVIVASHISHTA29/main/scripts/make_info_card.py)",
+      "Bash(curl -s https://raw.githubusercontent.com/AVIVASHISHTA29/AVIVASHISHTA29/main/scripts/fetch_contributions.py)",
+      "Bash(curl -s https://raw.githubusercontent.com/AVIVASHISHTA29/AVIVASHISHTA29/main/scripts/render_heatmap_svg.py)",
+      "Bash(curl -s https://raw.githubusercontent.com/AVIVASHISHTA29/AVIVASHISHTA29/main/README.md)",
+      "Bash(curl -s https://raw.githubusercontent.com/AVIVASHISHTA29/AVIVASHISHTA29/main/.github/workflows/update-profile-art.yml)"
+    ]
+  }
+}
