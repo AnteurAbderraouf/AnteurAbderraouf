@@ -1,22 +1,22 @@
 {
   "username": "AnteurAbderraouf",
-  "generated_at": "2026-07-24T08:45:46Z",
+  "generated_at": "2026-07-25T08:27:09Z",
   "range": {
     "start": "2025-07-20",
+    "end": "2026-07-25"
+  },
+  "total_contributions": 305,
+  "active_days": 47,
+  "avg_per_active_day": 6.5,
+  "current_streak": {
+    "length": 32,
+    "start": "2026-06-23",
     "end": "2026-07-24"
   },
-  "total_contributions": 303,
-  "active_days": 46,
-  "avg_per_active_day": 6.6,
-  "current_streak": {
-    "length": 31,
-    "start": "2026-06-23",
-    "end": "2026-07-23"
-  },
   "longest_streak": {
-    "length": 31,
+    "length": 32,
     "start": "2026-06-23",
-    "end": "2026-07-23"
+    "end": "2026-07-24"
   },
   "best_day": {
     "date": "2026-06-25",
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-07",
-      "total": 154
+      "total": 156
     }
   ],
   "days": [
@@ -1555,6 +1555,10 @@
     },
     {
       "date": "2026-07-24",
+      "count": 2
+    },
+    {
+      "date": "2026-07-25",
       "count": 0
     }
   ]
