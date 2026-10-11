@@ -1,22 +1,22 @@
 {
   "username": "AnteurAbderraouf",
-  "generated_at": "2026-10-10T12:41:14Z",
+  "generated_at": "2026-10-11T13:02:24Z",
   "range": {
-    "start": "2025-10-05",
+    "start": "2025-10-12",
+    "end": "2026-10-11"
+  },
+  "total_contributions": 953,
+  "active_days": 125,
+  "avg_per_active_day": 7.6,
+  "current_streak": {
+    "length": 110,
+    "start": "2026-06-23",
     "end": "2026-10-10"
   },
-  "total_contributions": 952,
-  "active_days": 124,
-  "avg_per_active_day": 7.7,
-  "current_streak": {
-    "length": 109,
-    "start": "2026-06-23",
-    "end": "2026-10-09"
-  },
   "longest_streak": {
-    "length": 109,
+    "length": 110,
     "start": "2026-06-23",
-    "end": "2026-10-09"
+    "end": "2026-10-10"
   },
   "best_day": {
     "date": "2026-08-14",
@@ -73,38 +73,10 @@
     },
     {
       "month": "2026-10",
-      "total": 54
+      "total": 55
     }
   ],
   "days": [
-    {
-      "date": "2025-10-05",
-      "count": 0
-    },
-    {
-      "date": "2025-10-06",
-      "count": 0
-    },
-    {
-      "date": "2025-10-07",
-      "count": 0
-    },
-    {
-      "date": "2025-10-08",
-      "count": 0
-    },
-    {
-      "date": "2025-10-09",
-      "count": 0
-    },
-    {
-      "date": "2025-10-10",
-      "count": 0
-    },
-    {
-      "date": "2025-10-11",
-      "count": 0
-    },
     {
       "date": "2025-10-12",
       "count": 0
@@ -1559,6 +1531,10 @@
     },
     {
       "date": "2026-10-10",
+      "count": 1
+    },
+    {
+      "date": "2026-10-11",
       "count": 0
     }
   ]
