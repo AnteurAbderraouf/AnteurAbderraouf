@@ -37,7 +37,7 @@
 
 <p><b>Freelance Software Developer · Cybersecurity & AI Enthusiast</b></p>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-antara-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-HANDLE-HERE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-antara-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abderraouf-anteur/)
 [![GitHub](https://img.shields.io/badge/GitHub-AnteurAbderraouf-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnteurAbderraouf)
 
 <br>
