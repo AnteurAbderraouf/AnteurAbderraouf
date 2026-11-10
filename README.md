@@ -4,6 +4,13 @@
      panel. regenerate portrait: python scripts/prep_photo.py <photo> &&
      python scripts/make_ascii_svg.py ; info panel: python scripts/make_info_card.py -->
 
+<h3><code>antara@github ~ $ ./knight.sh</code></h3>
+
+<img src="./ascii-knight.gif" width="860" alt="ASCII knight with a red cloak blowing in the wind" />
+
+<br>
+<br>
+
 <!-- animated contribution graph: real data, boxes reveal cell by cell
      (regenerated daily by .github/workflows/update-profile-art.yml) -->
 
