@@ -1,14 +1,13 @@
 name: Update profile art
 
 # Refreshes the contribution graph SVG daily from real data.
-# Runs daily, plus whenever you push to main, plus on-demand.
+# Runs daily, plus on-demand. Commits as github-actions[bot] so the refresh
+# never counts as a contribution on your own graph.
 
 "on":
   schedule:
     - cron: "17 6 * * *"   # ~06:17 UTC every day
   workflow_dispatch: {}
-  push:
-    branches: [main]
 
 permissions:
   contents: write
@@ -39,3 +38,6 @@ jobs:
         with:
           commit_message: "chore: refresh contribution graph [skip ci]"
           file_pattern: "data/contributions.json contrib-heatmap.svg"
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
