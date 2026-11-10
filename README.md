@@ -6,7 +6,7 @@
 
 <h3><code>antara@github ~ $ ./knight.sh</code></h3>
 
-<img src="./ascii-knight.gif" width="860" alt="ASCII knight with a red cloak blowing in the wind" />
+<img src="./ascii-knight.svg" width="860" alt="ASCII knight with a red cloak blowing in the wind" />
 
 <br>
 <br>
